@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+#menu > ul >li {
+    /* ブロック要素をインライン要素として表示する */
+    display: inline;
+    /* マージン（隣接する要素同士のスペース）のサイズを指定するプロパティ　上から右回り
+    二つだけだと上下と左右 */
+    margin: 0 16px 0 0;
+    /* パディング：ボーダーとコンテンツの間のスペース */
+    padding: 4px;
+    /* ボーダー */
+    border: 1px solid #666666;
+    /* ボーダーの角を丸める */
+    border-radius: 4px;
+    background-image: url(../png/yoru.png);
+    /* 背景画像の繰り返し制御 */
+    background-repeat: no-repeat;
+    /* 背景画像のサイズ */
+    background-size: 100%;
+    
+}
+
+/* 書式 */
+ul > li{
+    list-style: none;
+}
+
+#setsumei p::first-letter{
+    font-size: 2em;
+    color: darkolivegreen;
+}
+
+.yohaku{
+    padding: 20px;
+}
+
+#setsumei > h2, h3 {
+    text-align: center;
+}
+
+.bunsyou{
+    font-family: serif;
+}
+
+.tenkai{
+    color: #ffffff;
+    background-color: #000000; 
+}
+
+
+/* リンク */
+
+
+a:link {
+    color: lightskyblue;
+}
+
+a:hover{
+    color: darkgreen;
+}
+/* 訪問済みのリンク */
+a:visited{
+    color: rgb(255, 134, 219);
+}
+
+#top {
+    
+    background: linear-gradient(#05FBFF, #5c5fff);
+    margin: 0 0 0 0;
+    text-align: center;
+}
+
+body {
+    margin: 0 0 8px 0;
+}
+
+aside {
+    border: 2px solid;
+    border-radius: 12px;
+}
+
+aside > h2 {
+    font-size: 16px;
+}
+
+#photo2 {
+
+width: 100%;
+overflow: hidden;
+}
+
+
+/* フレックスボックス */
+.flex-container {
+    /* 横並びにする
+    子要素をフレックスボックスにする */
+    display: flex;
+    /* フレックスボックスを並べる方向 */
+    flex-flow: row wrap; /* 横 */
+    /* flex-flow: column wrap; 縦 */
+}
+
+main {
+    margin: 0 10px;
+    padding: 0 8px;
+    /* フレックスボックス同士のサイズの割合と最小値 */
+    flex: 2 ;
+    order: 2;
+}
+
+aside {
+    margin: 0 10px;
+    padding: 0 8px;
+    background-color: rgb(130, 140, 150);
+    order: 1;
+    flex-basis: 20%;
+
+}
